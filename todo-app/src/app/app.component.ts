@@ -10,12 +10,10 @@ export class AppComponent {
   taskDescription: string = '';
   taskList: string[] = [];
 
-  addTask() {
+  addTask(): void {
     console.log(this.taskDescription)
     this.taskList.push(this.taskDescription);
     this.taskDescription = '';
     console.log(this.taskList);
   }
-
-
 }
