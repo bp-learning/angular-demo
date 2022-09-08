@@ -1,0 +1,15 @@
+<section id="main-wrapper">
+  <app-header [name]="resume?.name"
+    [email]="resume?.email"
+  ></app-header>
+
+  <app-objective [objective]="resume?.objective"></app-objective>
+
+  <app-skills [skills]="resume?.skills"></app-skills>
+
+  <app-projects></app-projects>
+
+  <app-experience></app-experience>
+
+  <app-eductation [education]="resume?.education"></app-eductation>
+</section>
